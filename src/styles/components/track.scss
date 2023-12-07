@@ -1,0 +1,50 @@
+.track {
+  background-color: var(--color-white);
+  border: 3px solid var(--color-black);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  &__wrapper {
+    margin-bottom: 2rem;
+    max-width: 30rem;
+  }
+  &__btn {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 4rem;
+    border: 2px solid var(--color-black);
+    background-color: var(--color-white);
+    transition: all 250ms ease-in-out;
+    padding: 0.25rem;
+    border-radius: var(--border-circle);
+
+    &.active {
+      background-color: var(--color-yellow);
+    }
+    &__thumb {
+      width: 1.5rem;
+      height: 1.5rem;
+      background-color: var(--color-gray-900);
+      border-radius: var(--border-circle);
+    }
+  }
+  &__title {
+    display: flex;
+    align-items: center;
+    font-size: var(--font-size-xl);
+    font-family: "bangers";
+    margin-bottom: 1rem;
+    svg {
+      width: 2rem;
+      display: flex;
+      margin-right: 1rem;
+    }
+  }
+}

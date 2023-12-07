@@ -1,0 +1,16 @@
+.type {
+  &__h1 {
+    font-size: var(--font-size-2xl);
+    font-family: "bangers";
+    font-weight: 400;
+  }
+  &__h2 {
+    margin: 0;
+    font-size: var(--font-size-xl);
+    font-family: "bangers";
+    font-weight: 400;
+  }
+  &__p {
+    font-size: var(--font-size-base);
+  }
+}

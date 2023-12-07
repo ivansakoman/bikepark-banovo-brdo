@@ -1,0 +1,45 @@
+.header {
+  z-index: 1000;
+  position: fixed;
+  top: 1rem;
+  left: calc(50% - 278px);
+  display: flex;
+  align-items: center;
+  font-family: "Bangers";
+  @media (max-width: 40rem) {
+    left: calc(50% - 172px);
+    .header__item {
+      border-width: 2px;
+      a {
+        font-size: var(--font-size-base);
+        padding: 0.5rem 1rem;
+      }
+    }
+    &:hover {
+      .header__item {
+      }
+    }
+  }
+
+  &__item {
+    background-color: var(--color-yellow);
+    border: 3px solid var(--color-black);
+    margin-right: 1rem;
+    cursor: pointer;
+    font-size: var(--font-size-lg);
+
+    &:last-child {
+      margin-right: 0;
+    }
+    a {
+      display: block;
+      padding: 1rem 2rem;
+      color: inherit;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+  }
+  &__divider {
+    margin-top: 7rem;
+  }
+}

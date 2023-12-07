@@ -1,0 +1,39 @@
+.footer {
+  background-color: var(--color-gray-900);
+  color: var(--color-white);
+  padding: 2rem 0;
+  margin-top: 5rem;
+  &__container {
+    max-width: var(--screen-lg);
+    padding: 0 1rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+  &__col {
+    & > div {
+      margin-bottom: 0.5rem;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+      opacity: 0.5;
+      font-size: var(--font-size-sm);
+      transition: all 250ms ease;
+      &:hover {
+        text-decoration: underline;
+        opacity: 1;
+      }
+    }
+  }
+  &__title {
+    font-family: "bangers";
+    font-weight: 400;
+    font-size: var(--font-size-lg);
+  }
+  &__text {
+    opacity: 0.5;
+    font-size: var(--font-size-sm);
+  }
+}

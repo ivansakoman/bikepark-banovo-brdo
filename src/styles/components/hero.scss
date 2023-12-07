@@ -1,0 +1,8 @@
+.hero {
+  &__sign {
+    cursor: grab;
+    &:active {
+      cursor: grabbing;
+    }
+  }
+}

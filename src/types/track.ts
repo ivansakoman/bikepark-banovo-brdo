@@ -21,7 +21,7 @@ export type TrackType = {
   points: TrackPointType[];
 };
 
-type PinConfig = {
+export type PinConfig = {
   shadowUrl: string;
   iconSize: PointTuple;
   shadowSize: PointTuple;

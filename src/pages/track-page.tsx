@@ -12,7 +12,7 @@ import { motion } from "framer-motion";
 import { PinConfig, TrackType } from "../types/track";
 import DistanceIcon from "../assets/icons/distance";
 import ElevationIcon from "../assets/icons/elevation";
-import { DragEndEvent, PointTuple } from "leaflet";
+import { DragEndEvent } from "leaflet";
 import ChevronDownIcon from "../assets/icons/chevron-down";
 import L from "leaflet";
 import ZmijicaSign from "./../assets/custom-pins/zmijica-sign-pin.png";

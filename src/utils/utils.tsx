@@ -1,5 +1,7 @@
+import EasySmallIcon from "../assets/icons/easy-small";
 import HardSmallIcon from "../assets/icons/hard-small";
-import { DifficultyType, TrackType } from "../pages/track-page";
+import MediumSmallIcon from "../assets/icons/medium-small";
+import { DifficultyType, TrackType } from "../types/track";
 
 export const checkActiveTrackBtn = (
   activeTracks: TrackType[],
@@ -11,9 +13,9 @@ export const checkActiveTrackBtn = (
 export const renderDifficultyIcon = (difficulty: DifficultyType) => {
   switch (difficulty) {
     case "green":
-      return <HardSmallIcon />;
+      return <EasySmallIcon />;
     case "blue":
-      return <HardSmallIcon />;
+      return <MediumSmallIcon />;
 
     default:
       return <HardSmallIcon />;

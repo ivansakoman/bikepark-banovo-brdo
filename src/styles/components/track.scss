@@ -2,16 +2,18 @@
   background-color: var(--color-white);
   border: 3px solid var(--color-black);
   padding: 1rem;
-  margin-bottom: 1rem;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
-  &:last-child {
-    margin-bottom: 0;
-  }
+
   &__wrapper {
-    margin-bottom: 2rem;
-    max-width: 30rem;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    @media (max-width: 55em) {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
   &__btn {
     cursor: pointer;
@@ -40,11 +42,55 @@
     align-items: center;
     font-size: var(--font-size-xl);
     font-family: "bangers";
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     svg {
       width: 2rem;
       display: flex;
       margin-right: 1rem;
+    }
+  }
+  &__sub {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 2rem;
+    &:last-child {
+      margin-right: 0;
+    }
+    span {
+      font-family: "bangers";
+      font-size: var(--font-size-lg);
+    }
+    svg {
+      display: flex;
+      margin-right: 0.5rem;
+    }
+  }
+  &__status {
+    width: 1rem;
+    height: 1rem;
+    border-radius: var(--border-circle);
+    border: 2px solid var(--color-gray-900);
+    margin-left: 0.75rem;
+    &--active {
+      background-color: var(--color-green);
+    }
+    &--pending {
+      background-color: var(--color-yellow);
+    }
+    &--closed {
+      background-color: var(--color-red);
+    }
+  }
+  &__heading {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    & > div {
+      margin-left: 1rem;
+      svg {
+        display: flex;
+        width: 1.5rem;
+      }
     }
   }
 }

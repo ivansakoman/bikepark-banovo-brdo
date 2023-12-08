@@ -1,4 +1,4 @@
-import { TrackPointType } from "../pages/track-page";
+import { TrackPointType } from "../types/track";
 
 export const parseGpx = (gpx: string) => {
   const parser = new DOMParser();

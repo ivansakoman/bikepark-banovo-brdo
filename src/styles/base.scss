@@ -46,11 +46,17 @@ body {
 @import "./components/footer.scss";
 @import "./components/header.scss";
 @import "./components/hero.scss";
+@import "./components/img.scss";
+@import "./components/layout.scss";
 @import "./components/section.scss";
-@import "./components/track.scss";
+@import "./components/trail.scss";
 //utils
 @import "./utils/flex.scss";
 @import "./utils/type.scss";
 @import "./utils/margins.scss";
+@import "./utils/padding.scss";
+//pages
+@import "./pages/about.scss";
+@import "./pages/contact.scss";
 //overrides
 @import "./overrides/leaflet.scss";

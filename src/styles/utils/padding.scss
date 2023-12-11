@@ -2,35 +2,35 @@ $margin-unit: 0.25rem;
 
 $top: 20;
 $right: 0;
-$bottom: 8, 12;
-$left: 8;
+$bottom: 0;
+$left: 0;
 
-.m {
+.p {
   &t {
     @each $multiplier in $top {
       &-#{$multiplier} {
-        margin-top: calc(#{$multiplier} * #{$margin-unit});
+        padding-top: calc(#{$multiplier} * #{$margin-unit});
       }
     }
   }
   &r {
     @each $multiplier in $right {
       &-#{$multiplier} {
-        margin-right: calc(#{$multiplier} * #{$margin-unit});
+        padding-right: calc(#{$multiplier} * #{$margin-unit});
       }
     }
   }
   &b {
     @each $multiplier in $bottom {
       &-#{$multiplier} {
-        margin-bottom: calc(#{$multiplier} * #{$margin-unit});
+        padding-bottom: calc(#{$multiplier} * #{$margin-unit});
       }
     }
   }
   &l {
     @each $multiplier in $left {
       &-#{$multiplier} {
-        margin-left: calc(#{$multiplier} * #{$margin-unit});
+        padding-left: calc(#{$multiplier} * #{$margin-unit});
       }
     }
   }

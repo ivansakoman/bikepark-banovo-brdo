@@ -14,7 +14,7 @@ const Footer = () => {
           <div className="footer__col">
             <h4 className="footer__title">Poveznice</h4>
             <div>
-              <NavLink to={"/track"}>Staze</NavLink>
+              <NavLink to={"/trails"}>Staze</NavLink>
             </div>
             <div>
               <NavLink to={"/about"}>O nama</NavLink>

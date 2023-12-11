@@ -14,4 +14,17 @@
   &__p {
     font-size: var(--font-size-base);
   }
+
+  //font weight
+  &--regular {
+    font-weight: 400;
+  }
+  &--bold {
+    font-weight: 700;
+  }
+
+  //font family
+  &--bangers {
+    font-family: "bangers";
+  }
 }

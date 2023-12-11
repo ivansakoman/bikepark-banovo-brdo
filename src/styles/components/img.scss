@@ -1,0 +1,10 @@
+.img {
+  display: block;
+  width: 100%;
+  &__wrapper {
+    position: relative;
+  }
+  &--primary {
+    border: 0.5rem solid var(--color-black);
+  }
+}

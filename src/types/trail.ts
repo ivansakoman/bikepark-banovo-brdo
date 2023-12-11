@@ -4,13 +4,13 @@ export type DifficultyType = "green" | "blue" | "red";
 
 export type StatusType = "active" | "pending" | "closed";
 
-export type TrackPointType = {
+export type TrailPointType = {
   lat: number;
   lon: number;
   ele: number;
 };
 
-export type TrackType = {
+export type TrailType = {
   id: string;
   name: string;
   color: string;
@@ -18,7 +18,7 @@ export type TrackType = {
   distance: string;
   elevation: string;
   status: StatusType;
-  points: TrackPointType[];
+  points: TrailPointType[];
 };
 
 export type PinConfig = {

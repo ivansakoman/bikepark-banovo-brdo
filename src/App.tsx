@@ -3,19 +3,21 @@ import "leaflet/dist/leaflet.css";
 import { Routes, Route } from "react-router-dom";
 
 import Layout from "./components/layout";
-import TrackPage from "./pages/track-page";
 import NoMatch from "./pages/no-match";
-import Home from "./pages/home/home";
-import AboutPage from "./pages/about-page";
-import ContactPage from "./pages/contact-page";
+import Home from "./pages/home";
+import AboutPage from "./pages/about";
+import ContactPage from "./pages/contact";
+import TrailsPage from "./pages/trails";
+import ScrollToTop from "./utils/scroll-to-top";
 
 function App() {
   return (
     <>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="track" element={<TrackPage />} />
+          <Route path="trails" element={<TrailsPage />} />
           <Route path="about" element={<AboutPage />} />
           <Route path="contact" element={<ContactPage />} />
 

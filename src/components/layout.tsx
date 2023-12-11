@@ -6,8 +6,13 @@ const Layout = () => {
   return (
     <>
       <Header />
-      <Outlet />
-      <Footer />
+      <div className="layout">
+        <div className="layout__body">
+          <Outlet />
+        </div>
+
+        <Footer />
+      </div>
     </>
   );
 };

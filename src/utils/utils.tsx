@@ -1,13 +1,13 @@
 import EasySmallIcon from "../assets/icons/easy-small";
 import HardSmallIcon from "../assets/icons/hard-small";
 import MediumSmallIcon from "../assets/icons/medium-small";
-import { DifficultyType, TrackType } from "../types/track";
+import { DifficultyType, TrailType } from "../types/trail";
 
-export const checkActiveTrackBtn = (
-  activeTracks: TrackType[],
-  trackId: string
+export const checkActiveTrailBtn = (
+  activeTrails: TrailType[],
+  trailId: string
 ) => {
-  return activeTracks.some((track) => track.id === trackId) && "active";
+  return activeTrails.some((trail) => trail.id === trailId) && "active";
 };
 
 export const renderDifficultyIcon = (difficulty: DifficultyType) => {

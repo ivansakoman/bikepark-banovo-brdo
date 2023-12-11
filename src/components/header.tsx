@@ -27,7 +27,7 @@ const Header = () => {
         initial={{ y: "-150%" }}
         animate={{ y: 0, transition: { delay: 1.2 } }}
       >
-        <NavLink to={"/track"}>Staze</NavLink>
+        <NavLink to={"/trails"}>Staze</NavLink>
       </motion.div>
       <motion.div
         whileHover={{ rotate: 7 }}

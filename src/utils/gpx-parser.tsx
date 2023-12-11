@@ -1,4 +1,4 @@
-import { TrackPointType } from "../types/track";
+import { TrailPointType } from "../types/trail";
 
 export const parseGpx = (gpx: string) => {
   const parser = new DOMParser();
@@ -8,7 +8,7 @@ export const parseGpx = (gpx: string) => {
   const trkptNodes = xmlDoc.getElementsByTagName("trkpt");
 
   // Accumulate trkpt objects in an array
-  const trkptArray: TrackPointType[] = [];
+  const trkptArray: TrailPointType[] = [];
   for (let i = 0; i < trkptNodes.length; i++) {
     const trkptNode = trkptNodes[i];
     trkptArray.push({

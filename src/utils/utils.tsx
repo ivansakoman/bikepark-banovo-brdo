@@ -21,3 +21,7 @@ export const renderDifficultyIcon = (difficulty: DifficultyType) => {
       return <HardSmallIcon />;
   }
 };
+export const downSample = (data: number[], threshold: number) => {
+  const step = Math.ceil(data.length / threshold);
+  return data.filter((_d, i) => i % step === 0);
+};

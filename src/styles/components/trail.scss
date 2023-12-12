@@ -1,10 +1,22 @@
 .trail {
   background-color: var(--color-white);
   border: 3px solid var(--color-black);
-  padding: 1rem;
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
   justify-content: space-between;
+
+  &__header {
+    padding: 1rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  &__graph {
+    margin-top: 1rem;
+    display: flex;
+    width: 100%;
+    height: 3rem;
+  }
 
   &__wrapper {
     overflow: hidden;
@@ -85,11 +97,17 @@
     cursor: pointer;
     display: flex;
     align-items: center;
-    & > div {
-      margin-left: 1rem;
+    justify-content: space-between;
+
+    &__left {
+      display: flex;
+      align-items: center;
+      & > div {
+        display: flex;
+        align-items: center;
+      }
       svg {
         display: flex;
-        width: 1.5rem;
       }
     }
   }
